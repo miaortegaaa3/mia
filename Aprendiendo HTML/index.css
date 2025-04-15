@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.slide {
+    display: none;
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    background-color: #ccc;
+}
+.slide.active {
+    display: block;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button.prev {
+    left: 10px;
+}
+button.next {
+    right: 10px;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.tarjeta {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+.pie {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
